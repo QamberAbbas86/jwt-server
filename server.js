@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 const GHL_CONFIG = {
   clientId: process.env.GHL_CLIENT_ID,
   clientSecret: process.env.GHL_CLIENT_SECRET,
-  redirectUri: process.env.GHL_REDIRECT_URI || `http://localhost:${PORT}/auth/callback`,
+  redirectUri: process.env.GHL_REDIRECT_URI,
   scope: 'contacts.readonly opportunities.readonly',
   baseUrl: 'https://services.leadconnectorhq.com',
   url:'https://marketplace.leadconnectorhq.com'
